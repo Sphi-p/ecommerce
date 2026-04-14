@@ -1,0 +1,50 @@
+.banner {
+    background: linear-gradient(90deg, #D4183D 0%, rgba(212, 24, 61, 0.8) 100%);
+    border-radius: 10px;
+    padding: 16px;
+    position: relative;
+
+    .banner__close {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        top: 16px;
+        right: 16px;
+    }
+
+    .banner__header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .banner__title {
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 27px;
+        width: 200px;
+        margin: 0;
+    }
+
+    .banner__text {
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+    }
+
+    .banner__deadline {
+        font-family: "Liberation Mono";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin: 0 0 0 auto;
+    }
+}
