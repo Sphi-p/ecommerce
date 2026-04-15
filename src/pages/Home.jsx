@@ -1,4 +1,3 @@
-import arrowIcon from '../assets/select-arrow.svg'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { Filters } from '../components/Filters'
