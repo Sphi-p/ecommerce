@@ -1,4 +1,5 @@
 import arrowIcon from '../assets/select-arrow.svg'
+import { Dropdown } from './Dropdown'
 import './Filters.css'
 
 export const Filters = () => {
@@ -6,11 +7,15 @@ export const Filters = () => {
         <div className="store__filters filters">
             <h2 className="filters__title">Filters</h2>
             <div className="filters__wrapper">
-                <label className="filters__select select">
+                {/* <label className="filters__select select">
                     <span className="select__label">Brand</span>
                     <input className="select__input" type="text" id="brand" name="brand" />
                     <img src={arrowIcon} width={16} height={16} className="select__arrow" />
-                </label>
+                </label> */}
+                <div className="filters__select">
+                    <p className="filters__label">Brand</p>
+                    <Dropdown options={["Samsung", "LG", "Sony", "TCL", "Hisense"]} />
+                </div>
                 <div className="filters__price-range price-range">
                     <span className="price-range__label">Price Range</span>
                     <div className="price-range__wrapper">

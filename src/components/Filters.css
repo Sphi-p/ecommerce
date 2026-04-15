@@ -15,4 +15,11 @@
   .filters__btn {
     height: 40px;
   }
+
+  .filters__label {
+    color: #0A0A0A;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
 }

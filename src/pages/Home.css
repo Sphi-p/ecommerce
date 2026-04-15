@@ -40,8 +40,7 @@ input::placeholder {
   flex-direction: column;
   gap: 8px;
 
-  .price-range__label,
-  .select__label {
+  .price-range__label {
     color: #0A0A0A;
     font-size: 16px;
     line-height: 24px;
@@ -88,6 +87,20 @@ input::placeholder {
     padding: 32px 0;
     gap: 16px;
   }
+
+  .store__sort {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 233px;
+  }
+
+  .store__label {
+    color: #0A0A0A;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
 }
 
 .select {
@@ -104,12 +117,4 @@ input::placeholder {
 .price-range::placeholder {
   font-size: 16px;
   line-height: 100%;
-}
-
-.select {
-  .select__arrow {
-    position: absolute;
-    right: 12px;
-    bottom: 13px;
-  }
 }
