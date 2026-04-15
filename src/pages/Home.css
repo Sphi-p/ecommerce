@@ -79,6 +79,15 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
   }
+
+  .store__product-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    gap: 16px;
+  }
 }
 
 .select {

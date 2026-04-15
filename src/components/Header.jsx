@@ -5,7 +5,7 @@ import './Header.css'
 export const Header = () => {
     return (
         <header className="header">
-            <div className="container">
+            
                 <div className="header__wrapper">
                     <div className="header__content">
                         <a href="./tv" className="header__link header__link--home">TechStore</a>
@@ -26,7 +26,7 @@ export const Header = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            
         </header>
     )
 }
