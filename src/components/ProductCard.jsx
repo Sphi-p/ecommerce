@@ -3,6 +3,7 @@ import plusIcon from '../assets/plus.svg'
 import './ProductCard.css'
 import { Carousel } from './Carousel'
 import { useState } from "react"
+import { Button } from './Button'
 
 export const ProductCard = ({ id, category, make, model, price, images, isSpecialOffer, brand }) => {
     const [fave, setFave] = useState(false);
@@ -12,16 +13,12 @@ export const ProductCard = ({ id, category, make, model, price, images, isSpecia
         setFave(!fave);
     }
 
-    const handleAddToCart = () => {
-        setAmountInCart(1);
-    }
-
     const handleDetract = () => {
-        setAmountInCart(amountInCart - 1);
+        setAmountInCart((currAmount) => currAmount - 1);
     }
 
     const handleAdd = () => {
-        setAmountInCart(amountInCart + 1);
+        setAmountInCart((currAmount) => currAmount + 1);
     }
 
     return (
@@ -50,7 +47,7 @@ export const ProductCard = ({ id, category, make, model, price, images, isSpecia
                 </div>
                 <div className="product-card__bottom">
                     <p className="product-card__price">&#36;{price}</p>
-                    {amountInCart === 0 && <button className="product-card__btn btn" onClick={handleAddToCart}>Add to Cart</button>}
+                    {amountInCart === 0 && <Button btnClass="product-card__btn" btnType="button" btnText="Add to Cart" handleClick={handleAdd} />}
                     {amountInCart > 0 &&
                         <div className="product-card__amount">
                             <button className="product-card__minus btn" onClick={handleDetract} type="button">

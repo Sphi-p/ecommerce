@@ -1,6 +1,7 @@
 import cartIcon from '../assets/cart.svg'
 import accountIcon from '../assets/account.svg'
 import './Header.css'
+import { Link } from './Link'
 
 export const Header = () => {
     return (
@@ -11,9 +12,15 @@ export const Header = () => {
                         <a href="./tv" className="header__link header__link--home">TechStore</a>
                         <nav className="header__nav">
                             <ul className="header__list">
-                                <li className="header__list-item header__list-item--active"><button type="button" className="header__link">TV</button></li>
-                                <li className="header__list-item"><button type="button" className="header__link">Phone</button></li>
-                                <li className="header__list-item"><button type="button" className="header__link">Laptop</button></li>
+                                <li className="header__list-item">
+                                    <Link lnkClass="header__link header__link--active" lnkText="TV" lnkHref="/tv" />
+                                </li>
+                                <li className="header__list-item">
+                                    <Link lnkClass="header__link" lnkText="Phone" lnkHref="#" />
+                                </li>
+                                <li className="header__list-item">
+                                    <Link lnkClass="header__link" lnkText="Laptop" lnkHref="#" />
+                                </li>
                             </ul>
                         </nav>
                     </div>

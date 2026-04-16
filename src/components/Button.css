@@ -1,0 +1,11 @@
+.btn {
+  border: none;
+  border-radius: 10px;
+  background-color: #030213;
+  color: #FFFFFF;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

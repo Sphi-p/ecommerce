@@ -1,3 +1,5 @@
+import { Button } from './Button'
+import { Link } from './Link'
 import './Footer.css'
 
 export const Footer = () => {
@@ -10,13 +12,13 @@ export const Footer = () => {
                             <h2 className="footer__title">About</h2>
                             <ul className="footer__list">
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">About Us</a>
+                                    <Link lnkClass="footer__link" lnkText="About Us" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Careers</a>
+                                    <Link lnkClass="footer__link" lnkText="Careers" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Press</a>
+                                    <Link lnkClass="footer__link" lnkText="Press" lnkHref="#" />
                                 </li>
                             </ul>
                         </div>
@@ -24,13 +26,13 @@ export const Footer = () => {
                             <h2 className="footer__title">Support</h2>
                             <ul className="footer__list">
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Contact</a>
+                                    <Link lnkClass="footer__link" lnkText="Contact" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">FAQ</a>
+                                    <Link lnkClass="footer__link" lnkText="FAQ" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Shipping</a>
+                                    <Link lnkClass="footer__link" lnkText="Shipping" lnkHref="#" />
                                 </li>
                             </ul>
                         </div>
@@ -38,22 +40,22 @@ export const Footer = () => {
                             <h2 className="footer__title">Legal</h2>
                             <ul className="footer__list">
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Privacy Policy</a>
+                                    <Link lnkClass="footer__link" lnkText="Privacy Policy" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Terms of Service</a>
+                                    <Link lnkClass="footer__link" lnkText="Terms of Service" lnkHref="#" />
                                 </li>
                                 <li className="footer__list-item">
-                                    <a className="footer__link" href="#">Returns</a>
+                                    <Link lnkClass="footer__link" lnkText="Returns" lnkHref="#" />
                                 </li>
                             </ul>
                         </div>
                         <div className="footer__links">
                             <h2 className="footer__title">Newsletter</h2>
                             <p className="footer__text">Subscribe for exclusive deals</p>
-                            <form className="footer__form" action="">
+                            <form className="footer__form" onSubmit={(e) => e.preventDefault()}>
                                 <input type="email" className="footer__email" id="email" name="email" placeholder="Email" />
-                                <button type="submit" className="footer__btn btn">Subscribe</button>
+                                <Button btnClass="footer__btn" btnType="submit" btnText="Subscribe" />
                             </form>
                         </div>
                     </div>
